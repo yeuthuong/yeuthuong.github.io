@@ -1,27 +1,27 @@
-<!-- <!DOCTYPE html> -->
-<!-- <html lang="en&#45;US"> -->
-<!-- <meta charset="UTF&#45;8">  -->
-<!-- <body> -->
-<!--  -->
-<!-- <div ng&#45;app="myApp" ng&#45;controller="myCtrl"> -->
-<!--   <p>Name : <input type="text" ng&#45;model="name"></p> -->
-<!--   <h1>Hello {{name}}</h1> -->
-<!--   <button ng&#45;click="playMusic()">Play</button> -->
-<!-- </div> -->
-<!--  -->
-<!-- </body> -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
-<!-- <script> -->
-<!-- var app = angular.module("myApp", []); -->
-<!--  -->
-<!-- app.controller("myCtrl", function($scope) { -->
-<!--   $scope.playMusic = function () { -->
-<!--     var audio = new Audio('bai1.mp3'); -->
-<!--     audio.play(); -->
-<!--   } -->
-<!-- }); -->
-<!-- </script> -->
-<!-- </html> -->
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8"> 
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+  <button ng-click="playMusic()">Play</button>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function($scope) {
+  $scope.playMusic = function () {
+    var audio = new Audio('bai1.mp3');
+    audio.play();
+  }
+});
+</script>
+</html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
@@ -76,6 +76,12 @@
 				</ul>
 			</div>
 		</div>
+		
+		<div>
+        <audio id="myAudio" src="bai1.mp3" data-author="Thuong CUTE" data-title="GOI THUONG">
+        </audio>
+        <canvas id="myCanvas" width="800" height="400"></canvas>
+        </div>
 
 		<div class="footer">
 			<a href="http://tympanus.net/codrops/2011/01/03/parallax-slider/"><< Back to the Codrops tutorial</a>
@@ -372,4 +378,19 @@
         </script>
 
     </body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script src="js/visualizer.js"></script>
+<script>
+
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function($scope) {
+  $scope.playMusic = function () {
+    var audio = new Audio('bai1.mp3');
+    audio.play();
+  }
+
+ // $scope.playMusic();
+});
+</script>
 </html>
