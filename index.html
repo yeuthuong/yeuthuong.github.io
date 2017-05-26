@@ -54,9 +54,9 @@
 		</div>
 		
 		<div>
-        <audio id="myAudio" src="bai1.mp3" data-author="Thuong CUTE" data-title="GOI THUONG">
-        </audio>
-        <canvas id="myCanvas" width="800" height="400"></canvas>
+        <!-- <audio id="myAudio" src="bai1.mp3" data-author="Thuong CUTE" data-title="GOI THUONG"> -->
+        <!-- </audio> -->
+        <!-- <canvas id="myCanvas" width="800" height="400"></canvas> -->
         </div>
 
 		<div class="footer">
@@ -355,18 +355,8 @@
 
     </body>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
- <script src="js/visualizer.js"></script>
 <script>
-
-var app = angular.module("myApp", []);
-
-app.controller("myCtrl", function($scope) {
-  $scope.playMusic = function () {
     var audio = new Audio('bai1.mp3');
     audio.play();
-  }
-
- // $scope.playMusic();
-});
 </script>
 </html>
