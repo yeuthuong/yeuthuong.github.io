@@ -478,6 +478,10 @@ app.controller('myCtrl', function($scope, $timeout) {
         $scope.imageUrl = "images/" + images[idx];
       }
     }
+    $timeout(function () {
+      // $("#landing").fadeout();
+      $scope.landing = false;
+    }, 12000);
 
     $scope.landing = true;
     $scope.comein = function() {
